@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anuglar2</title>
+
+    <!-- Polyfills & Vendors -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>s
+
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+
+    <script>
+        SystemJS.import("system.config.js")
+            .then(function () { SystemJS.import("app"); })
+            .catch(function (err) { console.log(err); });
+    </script>
+
+</head>
+
+<body>
+    <meine-app>Ladet...</meine-app>
+</body>
+
+</html>
